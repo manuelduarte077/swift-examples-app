@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  TriviaGame
 //
-//  Created by Manuel Duarte on 9/4/22. 
+//  Created by Manuel Duarte on 9/4/22.
 //
 
 import SwiftUI
@@ -13,14 +13,12 @@ struct ContentView: View {
             VStack(spacing: 20){
                 Text("Tivia Game")
                     .lilacTitle()
-                    
-                
+                                    
                 Text("Are you ready to test out your trivia skills?")
                     .foregroundColor(Color("AccentColor"))
             }
                 
             PrimaryButton( text: "Let's go!" )
-
 
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -31,6 +29,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+        }
     }
 }
