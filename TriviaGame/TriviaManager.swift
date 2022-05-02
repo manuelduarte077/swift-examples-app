@@ -18,6 +18,7 @@ class TriviaManager: ObservableObject {
   @Published private(set) var question: AttributedString = ""
   @Published private(set) var answerChoices: [Answer] = []
   @Published private(set) var progress: CGFloat = 0.00
+  @Published private(set) var score = 0
   
   
   init() {
@@ -43,6 +44,7 @@ class TriviaManager: ObservableObject {
       DispatchQueue.main.async {
         self.trivia = decodedData.results
         self.length = self.trivia.count
+        self.setQuestion()
       }
       
     } catch {
@@ -55,6 +57,7 @@ class TriviaManager: ObservableObject {
     if index + 1 < length {
       index += 1
       // Setting new question here...
+      setQuestion()
     } else {
       reachedEnd = true
     }
@@ -63,7 +66,24 @@ class TriviaManager: ObservableObject {
   
   func setQuestion() {
     answerSelected = false
-    progress = (index + 1) / length *
+    progress = CGFloat(Double(index + 1) / Double(length) * 350)
+    
+    
+    if index < length {
+      let currentTriviaQuestion = trivia[index]
+      question = currentTriviaQuestion.formattedQuestion
+      answerChoices = currentTriviaQuestion.answers
+    }
+    
+  }
+  
+  func selectAnswer(answer: Answer) {
+    answerSelected = true
+    
+    if answer.isCorrect {
+      score += 1
+    }
+    
   }
   
 
