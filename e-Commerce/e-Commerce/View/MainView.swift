@@ -1,10 +1,10 @@
-
-
 import SwiftUI
 
 struct MainView: View {
     var body: some View {
+        
         NavigationView {
+            
         TabView {
             
             ListeditemView()
@@ -15,11 +15,10 @@ struct MainView: View {
             CartItemView()
                 .tabItem {
                     Image(systemName: "cart.fill")
+                    
                 }
             
-        }
-       
-      
+            }
         }
     }
 }
