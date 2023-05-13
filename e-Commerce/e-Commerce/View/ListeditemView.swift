@@ -1,5 +1,6 @@
 
 import SwiftUI
+import Foundation
 
 struct ListeditemView: View {
     
@@ -12,28 +13,25 @@ struct ListeditemView: View {
         
         ZStack{
             
-            
             ScrollView(.vertical, showsIndicators: false) {
                 
                 headerView
                 
                 Text("Trending")
-                    .font(.system(size: 24, weight: .bold, design: .serif))
+                    .font(.system(size: 24, weight: .bold, design: .default))
                     .frame(maxWidth:.infinity, alignment: .leading)
                     .padding(.leading)
-                
+                //
                 trendingItem
                 
                 Text("Comming Soon")
-                    .font(.system(size: 24, weight: .bold, design: .serif))
+                    .font(.system(size: 24, weight: .bold, design: .default))
                     .frame(maxWidth:.infinity, alignment: .leading)
                     .padding(.leading)
                 
                 CommonSoonItemView
-                    .padding(.bottom,90)
-                
+                    .padding(.bottom, 90)
             }
-            
             
         }.edgesIgnoringSafeArea(.top)
     }
@@ -72,7 +70,6 @@ extension ListeditemView {
                 withAnimation(.easeInOut(duration: 1)) {
                     Indexer =  Indexer == 5 ? 0 : Indexer + 1
                 }
-                
             }
     }
     

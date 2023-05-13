@@ -3,7 +3,7 @@
 import SwiftUI
 
 struct DetailItemView: View {
-  
+    
     @EnvironmentObject var  vm : ChairViewModel
     
     
@@ -15,9 +15,10 @@ struct DetailItemView: View {
     @State var IsColor2Pressed : Bool = false
     @State var isColor3Pressed : Bool = false
     @State var IsColor4Pressed : Bool = false
-
+    
     var body: some View {
-        VStack(alignment:.leading,spacing:0){
+        VStack(alignment:.leading, spacing:0){
+            
             Image(chair.image)
                 .resizable()
                 .scaledToFill()
@@ -30,29 +31,28 @@ struct DetailItemView: View {
                 }
             
             Text(chair.brand)
-                .font(.system(size: 35, weight: .semibold, design: .serif))
-                .padding(.top,40)
-                .padding(.leading,20)
+                .font(.system(size: 35, weight: .semibold, design: .default))
+                .padding(.top, 40)
+                .padding(.leading, 30)
             
             Text("$"+String(chair.Price))
                 .font(.system(size: 30, weight: .bold, design: .monospaced))
                 .foregroundColor(.blue)
-                .padding(.leading,20)
-                .padding(.top,30)
+                .padding(.leading, 30)
+                .padding(.top, 30)
             
             HStack{
                 Text("Color:")
-                    .font(.system(size: 30, weight: .bold, design: .serif))
+                    .font(.system(size: 30, weight: .medium))
                 Spacer()
                 Text("Quantity:")
-                    .font(.system(size: 30, weight: .bold, design: .serif))
+                    .font(.system(size: 30, weight: .medium))
                     .padding(.trailing)
                 
-            }.padding(.leading,20)
-                .padding(.top,30)
+            }.padding(.leading, 30)
             
             
-            HStack(spacing:20){
+            HStack(spacing: 20){
                 Circle()
                     .fill(.gray)
                     .frame(width: 30, height: 30, alignment: .center)
@@ -73,8 +73,6 @@ struct DetailItemView: View {
                         
                     }
                 
-                
-                    
                 Circle()
                     .fill(.blue)
                     .frame(width: 30, height: 30, alignment: .center)
@@ -86,14 +84,11 @@ struct DetailItemView: View {
                     )
                     .onTapGesture {
                         withAnimation(.linear(duration: 0.5)) {
-                        isColor1Pressed=false
-                        IsColor2Pressed=true
-                        isColor3Pressed=false
-                        IsColor4Pressed=false
+                            isColor1Pressed=false
+                            IsColor2Pressed=true
+                            isColor3Pressed=false
+                            IsColor4Pressed=false
                         }}
-                
-                
-                
                 
                 Circle()
                     .fill(.red)
@@ -106,10 +101,10 @@ struct DetailItemView: View {
                     )
                     .onTapGesture {
                         withAnimation(.linear(duration: 0.5)) {
-                        isColor1Pressed=false
-                        IsColor2Pressed=false
-                        isColor3Pressed=true
-                        IsColor4Pressed=false
+                            isColor1Pressed=false
+                            IsColor2Pressed=false
+                            isColor3Pressed=true
+                            IsColor4Pressed=false
                         }}
                 
                 Circle()
@@ -123,15 +118,12 @@ struct DetailItemView: View {
                     )
                     .onTapGesture {
                         withAnimation(.linear(duration: 0.3)) {
-                        isColor1Pressed=false
-                        IsColor2Pressed=false
-                        isColor3Pressed=false
-                        IsColor4Pressed=true
+                            isColor1Pressed=false
+                            IsColor2Pressed=false
+                            isColor3Pressed=false
+                            IsColor4Pressed=true
+                        }
                     }
-                    }
-                
-                
-                Spacer()
                 
                 Button {
                     quantity = quantity - 1
@@ -143,7 +135,7 @@ struct DetailItemView: View {
                         .frame(width: 50, height: 50, alignment: .center)
                         .background(.gray.opacity(0.7))
                         .cornerRadius(12)
-                
+                    
                 }
                 
                 Text(String(quantity))
@@ -157,66 +149,53 @@ struct DetailItemView: View {
                 } label: {
                     
                     Text("+")
-                     
+                    
                         .font(.system(size: 40, weight: .semibold, design: .default))
                         .foregroundColor(.black)
                         .frame(width: 50, height: 50, alignment: .center)
                         .background(.gray.opacity(0.7))
                         .cornerRadius(12)
-                
+                    
                 }
-                .padding(.trailing,20)
+                .padding(.trailing, 40)
                 
-
                 
-            }.padding(.leading,20)
-                .padding(.top,30)
+                
+            }.padding(.leading, 20)
+                .padding(.top, 30)
             
             Text(chair.description)
-                .font(.system(size: 18, weight:.medium, design: .serif))
+                .font(.system(size: 18, weight: .medium, design: .default))
                 .padding()
-                .padding(.top,10)
-            
-          
-
-            
+                .padding(.top, 10)
+                .padding(.leading, 10)
             
             Spacer()
             
-            
             Button {
                 vm.addItem(chair: chair)
-                
             } label: {
-                
                 Text("ADD TO CART")
-                    .font(.system(size: 35, weight: .semibold, design: .serif))
+                    .font(.system(size: 35, weight: .semibold, design: .default))
                     .foregroundColor(.white)
                     .frame(width: UIScreen.main.bounds.width, height: 70, alignment: .center)
                     .background(.blue)
                     .cornerRadius(19)
                     .zIndex(1)
-                
             }
-            .padding(.bottom,10)
-
-
-            
+            .padding(.bottom, 40)
         }
+        //        .padding(.leading, 30)
         .edgesIgnoringSafeArea(.bottom)
-      
-       
-        
     }
 }
 
 struct DetailItemView_Previews: PreviewProvider {
     
     static let vm = ChairViewModel()
-   
+    
     static var previews: some View {
         DetailItemView(chair: vm.Chairs.first!)
             .environmentObject(ChairViewModel())
-           
     }
 }

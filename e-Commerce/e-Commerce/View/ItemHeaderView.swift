@@ -20,7 +20,7 @@ struct ItemHeaderView: View {
                     .padding(.top,5)
                 
                 Text("Best Selling")
-                    .font(.system(size: 18, weight: .semibold, design: .serif))
+                    .font(.system(size: 18, weight: .semibold, design: .default))
                     .padding(.leading)
                     .padding(.top,5)
                 

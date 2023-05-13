@@ -23,12 +23,10 @@ struct itemCardView: View {
                 
             
             Text("$"+String(chair.Price))
-                .font(.title2)
-                .fontWeight(.bold)
+                .font(.title3)
+                .fontWeight(.light)
                 .foregroundColor(.blue)
-                .padding(.top)
-                
-            
+
         }
         .frame(width: 200, height: 300, alignment: .center)
         .background(Color.white.cornerRadius(15).shadow(radius: 8, x: 4, y: 4))

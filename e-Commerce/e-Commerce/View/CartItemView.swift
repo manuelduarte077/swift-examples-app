@@ -6,7 +6,7 @@ struct CartItemView: View {
     @EnvironmentObject var  vm : ChairViewModel
     
     var body: some View {
-       
+        
         ZStack{
             HStack {
                 Color("secondBackground")
@@ -17,14 +17,14 @@ struct CartItemView: View {
             VStack{
                 ForEach(vm.CartChair){ chair in
                     CartItem(chair: chair)
-                        .padding(.top,10)
+                        .padding(.top, 10)
                 }
                 
                 Spacer()
-
+                
             }
-            .padding(.top,100)
-        
+            .padding(.top, 100)
+            
             
         }.edgesIgnoringSafeArea(.top)
         

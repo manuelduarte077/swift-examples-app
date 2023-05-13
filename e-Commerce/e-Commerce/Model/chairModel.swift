@@ -1,4 +1,3 @@
-
 import Foundation
 
 struct chairModel:Identifiable{
@@ -8,5 +7,4 @@ struct chairModel:Identifiable{
     var Price:Double
     var brand:String
     var stateOnMarket:String
-    
 }

@@ -16,27 +16,27 @@ struct CartItem: View {
             
             VStack {
                 Text(chair.brand)
-                    .font(.system(size: 30, weight: .semibold, design: .serif))
+                    .font(.system(size: 20, weight: .bold))
+                    .padding(.trailing, 10)
                 
                 HStack{
                     Text("$ "+String(chair.Price))
-                        .font(.system(size: 25, weight: .bold, design: .serif))
+                        .font(.system(size: 20, weight: .semibold))
                         .foregroundColor(.blue)
-                    
+
                     Button {
                         vm.deleteSelectedItem(chair: chair)
                         
                     } label: {
                         Image(systemName: "trash.circle.fill")
-                            .font(.system(size: 30, weight: .bold, design: .default))
+                            .font(.system(size: 20, weight: .regular))
                             .foregroundColor(.black)
+                            .padding(.trailing, 10)
                     }
                     .padding(.leading)
-                 
 
                 }
                 .padding(.top)
- 
             }
             
         }

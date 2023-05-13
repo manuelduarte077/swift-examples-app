@@ -20,6 +20,8 @@
 		4CD6951028B77285002FE12C /* chairViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6950F28B77285002FE12C /* chairViewModel.swift */; };
 		4CD6951228B77F08002FE12C /* ItemHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6951128B77F08002FE12C /* ItemHeaderView.swift */; };
 		4CD6951428B834E9002FE12C /* itemCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD6951328B834E9002FE12C /* itemCardView.swift */; };
+		648829EB2A0F67D600AB7CAB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648829EA2A0F67D600AB7CAB /* Fonts.swift */; };
+		648829ED2A0F67FF00AB7CAB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648829EC2A0F67FF00AB7CAB /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,15 @@
 		4CD6950F28B77285002FE12C /* chairViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chairViewModel.swift; sourceTree = "<group>"; };
 		4CD6951128B77F08002FE12C /* ItemHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemHeaderView.swift; sourceTree = "<group>"; };
 		4CD6951328B834E9002FE12C /* itemCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCardView.swift; sourceTree = "<group>"; };
+		648829E52A0F67B900AB7CAB /* redhat_book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redhat_book.ttf; sourceTree = "<group>"; };
+		648829E62A0F67B900AB7CAB /* redhat_bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redhat_bold.ttf; sourceTree = "<group>"; };
+		648829E72A0F67BA00AB7CAB /* redhat_regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redhat_regular.ttf; sourceTree = "<group>"; };
+		648829E82A0F67BA00AB7CAB /* redhat_medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redhat_medium.ttf; sourceTree = "<group>"; };
+		648829E92A0F67BA00AB7CAB /* redhat_light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = redhat_light.ttf; sourceTree = "<group>"; };
+		648829EA2A0F67D600AB7CAB /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		648829EC2A0F67FF00AB7CAB /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		648829EF2A0F687E00AB7CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		648829F02A0FEEA100AB7CAB /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Text.swift; path = "../../../../../sigma/topcars-ios/topCarsApp/lib/components/text/Text.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +80,8 @@
 		4CD694F028B77033002FE12C /* e-Commerce */ = {
 			isa = PBXGroup;
 			children = (
+				648829EF2A0F687E00AB7CAB /* Info.plist */,
+				648829EE2A0F680400AB7CAB /* ui */,
 				4CD694F128B77033002FE12C /* e_CommerceApp.swift */,
 				4CD6950428B770BD002FE12C /* ViweModel */,
 				4CD6950328B770B5002FE12C /* View */,
@@ -124,6 +137,29 @@
 				4CD6950F28B77285002FE12C /* chairViewModel.swift */,
 			);
 			path = ViweModel;
+			sourceTree = "<group>";
+		};
+		648829E42A0F677B00AB7CAB /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				648829E62A0F67B900AB7CAB /* redhat_bold.ttf */,
+				648829E52A0F67B900AB7CAB /* redhat_book.ttf */,
+				648829E92A0F67BA00AB7CAB /* redhat_light.ttf */,
+				648829E82A0F67BA00AB7CAB /* redhat_medium.ttf */,
+				648829E72A0F67BA00AB7CAB /* redhat_regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		648829EE2A0F680400AB7CAB /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				648829F02A0FEEA100AB7CAB /* Text.swift */,
+				648829EA2A0F67D600AB7CAB /* Fonts.swift */,
+				648829EC2A0F67FF00AB7CAB /* Colors.swift */,
+				648829E42A0F677B00AB7CAB /* fonts */,
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,9 +236,11 @@
 				4CD6950E28B7726E002FE12C /* CartItemView.swift in Sources */,
 				4CA3E93728B96BBB008D0A93 /* CartItem.swift in Sources */,
 				4CD6951028B77285002FE12C /* chairViewModel.swift in Sources */,
+				648829EB2A0F67D600AB7CAB /* Fonts.swift in Sources */,
 				4CD6951428B834E9002FE12C /* itemCardView.swift in Sources */,
 				4CD694F228B77033002FE12C /* e_CommerceApp.swift in Sources */,
 				4CD6950828B77235002FE12C /* MainView.swift in Sources */,
+				648829ED2A0F67FF00AB7CAB /* Colors.swift in Sources */,
 				4CD6950A28B7724E002FE12C /* ListeditemView.swift in Sources */,
 				4CD6950C28B77260002FE12C /* DetailItemView.swift in Sources */,
 				4CD6950628B77167002FE12C /* chairModel.swift in Sources */,
@@ -335,9 +373,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"e-Commerce/Preview Content\"";
-				DEVELOPMENT_TEAM = X9WC7NH897;
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "e-Commerce/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -364,9 +403,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"e-Commerce/Preview Content\"";
-				DEVELOPMENT_TEAM = X9WC7NH897;
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "e-Commerce/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

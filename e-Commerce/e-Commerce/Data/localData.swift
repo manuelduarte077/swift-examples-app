@@ -1,5 +1,5 @@
-
 import Foundation
+
 struct data {
     static let chairs = [
         chairModel(image: "1", description: "Modern Industrial design dining chair that is very comfortable due to its curved seat pad area and supportive back rest.", Price: 99,brand: "BROGAN",stateOnMarket:"comming soon"),

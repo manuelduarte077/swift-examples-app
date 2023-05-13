@@ -9,15 +9,15 @@ struct MainView: View {
             
             ListeditemView()
                 .tabItem {
-                  Image(systemName: "house.circle.fill")
-                    
-                }
-            CartItemView()
-                .tabItem {
-                    Image(systemName: "cart.fill")
-                    
+                  Image(systemName: "house")
+                        
                 }
             
+            CartItemView()
+                .tabItem {
+                    Image(systemName: "cart")
+                        .resizable()
+                }
             }
         }
     }
