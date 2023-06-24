@@ -9,54 +9,44 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var users: listOfUsers = []
-    @State var searchUser = ""
-    
-    var filteredUsers: listOfUsers {
-        guard !searchUser.isEmpty else { return users }
-        return users.filter {$0.name.localizedStandardContains(searchUser)}
-    }
+    @StateObject private var viewModel = ViewModel()
+    @State private var searchQuery = ""
+ 
     
     var body: some View {
         NavigationStack {
         
-            List(filteredUsers, id: \.id) { user in
+            List(viewModel.filteredUsers, id: \.id) { user in
                 
-                HStack {
-                    Image(systemName: "person")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(.white)
-                        .padding(12)
-                        .background(Color.black)
-                        .clipShape(Circle())
-                    
-                    VStack {
-                        Text(user.name)
-                        Text(user.email)
-                    }.font(.title3)
+                NavigationLink {
+                    UserDetailView(user: user)
+                } label: {
+                    HStack {
+                        Image(systemName: "person")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .foregroundColor(.white)
+                            .padding(12)
+                            .background(Color.black)
+                            .clipShape(Circle())
+                        
+                        VStack {
+                            Text(user.name)
+                            Text(user.email)
+                        }.font(.title3)
+                    }
                 }
+                
             }
-            .task {
-                users = await getUsers()
-            }
-            .searchable(text: $searchUser, prompt: "Search user")
+            .searchable(text: $searchQuery, prompt: "Search user")
+            .onChange(of: searchQuery, perform: { query in
+                viewModel.filterUsers(query: query)
+            })
             .navigationTitle("Users")
         }
     }
     
-     // Funcion que me devuelve una lista de usuarios
-    func getUsers() async -> listOfUsers {
-        
-        let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
-        let (data, _) = try! await URLSession.shared.data(from: url)
-        let decoder = JSONDecoder()
-        
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        
-        return try! decoder.decode(listOfUsers.self, from: data)
-        
-    }
+
 }
 
 struct ContentView_Previews: PreviewProvider {

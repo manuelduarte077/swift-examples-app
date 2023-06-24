@@ -12,6 +12,8 @@
 		6410F5E02A46DE00006670A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6410F5DF2A46DE00006670A2 /* Assets.xcassets */; };
 		6410F5E32A46DE00006670A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6410F5E22A46DE00006670A2 /* Preview Assets.xcassets */; };
 		6410F5EA2A46DE6D006670A2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410F5E92A46DE6D006670A2 /* UserModel.swift */; };
+		6410F5EC2A46E412006670A2 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410F5EB2A46E412006670A2 /* ViewModel.swift */; };
+		6410F5EE2A46E73A006670A2 /* UserDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410F5ED2A46E73A006670A2 /* UserDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		6410F5DF2A46DE00006670A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6410F5E22A46DE00006670A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6410F5E92A46DE6D006670A2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6410F5EB2A46E412006670A2 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		6410F5ED2A46E73A006670A2 /* UserDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			children = (
 				6410F5DB2A46DDFF006670A2 /* SearchBarUserApp.swift */,
 				6410F5DD2A46DDFF006670A2 /* ContentView.swift */,
+				6410F5ED2A46E73A006670A2 /* UserDetailView.swift */,
 				6410F5E92A46DE6D006670A2 /* UserModel.swift */,
+				6410F5EB2A46E412006670A2 /* ViewModel.swift */,
 				6410F5DF2A46DE00006670A2 /* Assets.xcassets */,
 				6410F5E12A46DE00006670A2 /* Preview Content */,
 			);
@@ -142,6 +148,8 @@
 			files = (
 				6410F5DE2A46DDFF006670A2 /* ContentView.swift in Sources */,
 				6410F5EA2A46DE6D006670A2 /* UserModel.swift in Sources */,
+				6410F5EC2A46E412006670A2 /* ViewModel.swift in Sources */,
+				6410F5EE2A46E73A006670A2 /* UserDetailView.swift in Sources */,
 				6410F5DC2A46DDFF006670A2 /* SearchBarUserApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
