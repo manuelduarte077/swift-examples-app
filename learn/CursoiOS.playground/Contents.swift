@@ -220,3 +220,228 @@ func getMonthWithSwitch(_ month:Int){
 }
 
 getMonthWithSwitch(3)
+
+
+func getTrimester(_ month:Int){
+    switch month{
+    case 1, 2, 3: print("Primer trimestre")
+    case 4, 5, 6: print("Segundo trimestre")
+    case 7, 8, 9: print("Tercer trimestre")
+    case 10, 11, 12: print("Cuarto trimestre")
+    default: print("Introduce un mes válido")
+    }
+}
+
+getTrimester(11)
+
+func getSemester(_ month:Int){
+    switch month{
+    case 1...6: print("Primer trimestre")
+    case 7...12: print("Tercer trimestre")
+    default: print("Introduce un mes válido")
+    }
+}
+
+getSemester(1)
+
+/** Ejercicio 4
+ Calcula el área de un círculo:
+ Crea una función que reciba el radio de un círculo y devuelva su área (PI * Radio * Radio).
+ Luego pinta el resultado por pantalla. */
+
+func calculateCircleArea(_ radius:Double) -> Double{
+    return Double.pi * radius * radius
+}
+
+let radius:Double = 10
+let result = calculateCircleArea(radius)
+print("El área de un círculo con un radio de \(radius) es de \(result)")
+
+/** Ejercicio 5
+ Crea una función que reciba un número y con la ayuda de un IF pinte en pantalla si el número
+ es positivo, negativo o cero */
+
+func numberValue(_ number:Int) {
+    if number > 0 {
+        print("Numero positivo")
+    } else if number < 0 {
+        print("Numero negativo")
+    } else {
+        print("Tu numero es cero")
+    }
+}
+
+numberValue(-1)
+
+/** Ejercicio 6
+ Crea una función que reciba un número y con la ayuda de un SWITCH pinte en pantalla si el número
+ es positivo, negativo o cero */
+
+func positiveOrNegativeSwitch(_ number:Int){
+    switch number{
+    case let x where x > 0: print("Positivo")
+    case let x where x < 0: print("Negativo")
+    default:print("Es cero")
+    }
+}
+
+positiveOrNegativeSwitch(99)
+
+
+// ARRAYS
+let names:[String] = ["Aris", "Pepe", "David", "Fulanito"]
+print(names[2])
+
+var daysOfWeek = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"]
+print(daysOfWeek[1])
+
+daysOfWeek.remove(at: 0)
+daysOfWeek.append("Juevecito")
+
+// Blucles
+
+for i in 1...5 {
+    print(i)
+}
+
+for i in daysOfWeek {
+    print("Semana sin Lunes \(i)")
+}
+
+for day in daysOfWeek {
+    if day == "Jueves"{
+        print("Está el jueves en el listado")
+    }
+}
+
+var count = 0;
+while count < 10 {
+    print("Hola soy un contador \(count)")
+
+    count += 1;
+}
+
+var count2 = 5
+repeat {
+    print("Hello")
+} while count2 < 0
+            
+for day in daysOfWeek {
+    if day == "Jueves"{
+        print("Es jueves")
+        break
+    }else{
+        print("NO es jueves")
+    }
+}
+
+for day in daysOfWeek {
+    if day == "Jueves"{
+        print("Es jueves")
+        continue
+    }
+    print("No hay jueves")
+}
+
+
+/** Ejercicio 7
+ Escribe una función que reciba un númera e imprima su tabla de multiplicar del 1 al 10.
+*/
+
+func multiplication(_ number:Int){
+    for i in 1...10{
+        print("\(number) por \(i) es \(i*number)")
+    }
+}
+
+multiplication(2)
+
+/** Ejercicio 8
+ Escribe un programa que calcule la suma de todos los números pares del 1 al 100 y muestre el resultado.
+ Para saber si un número es par se tiene que dar la siguiente condificón (número % 2 == 0)
+*/
+
+var totalSum = 0
+for i in 1...100 {
+    if(i % 2==0 ) {
+        totalSum += 1
+    }
+}
+print("El resultado es \(totalSum)")
+
+
+var totalSum2 = 0
+for i in 1...100{
+    if(i % 2 != 0){
+        continue
+    }
+    totalSum2 += i
+}
+
+print("El resultado es \(totalSum2)")
+
+/** Ejercicio 9
+ Escribe una función que cuente el número de vocales en una palabra y lo pinte.
+ TIP: Las palabras (strings) puedes recorrerse con bucle for.
+*/
+
+func vocalCounter(_ text:String){
+    var totalVocal:Int = 0
+    for caracter in text{
+        switch caracter.lowercased() {
+        case "a", "e", "i", "o", "u": totalVocal += 1
+        default: continue
+        }
+    }
+    print("El número de vocales para \(text) es de \(totalVocal)")
+}
+
+vocalCounter("Man")
+
+
+//TUPLAS
+
+var tupla = ("Manuel", 31, true, "Calle mi casa", 666666666, 1.87)
+
+print(tupla.1)
+
+
+//Diccionarios
+
+var dicc:[String: Any] = ["name": "Manuel", "age": 31, "imHappy": true, "address": "Calle mi casa"]
+var myDiccionaryName:String = dicc["name"] as? String ?? "Pepito"
+print(myDiccionaryName)
+
+for (key, value) in dicc{
+    print("La clave \(key) contiene \(value)")
+}
+
+
+
+// Clases
+class Persona {
+    
+    var name:String
+    var age:Int
+    
+    init(name: String, age: Int) {
+        self.name = name
+        self.age = age
+    }
+    
+    func gretings(){
+        print("Hola, soy \(name) y tengo \(age) años.")
+    }
+}
+
+
+var manuel:Persona = Persona(name: "Manuel", age: 24)
+manuel.gretings()
+
+struct ExampleStruct {
+    var name:String
+    var age:Int
+}
+
+var exampleStruct:ExampleStruct = ExampleStruct(name: "Manuel", age: 24)
+exampleStruct.age
