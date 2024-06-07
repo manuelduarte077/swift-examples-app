@@ -14,6 +14,9 @@
 		C43EB3B62C127B340079FF1E /* ImageExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EB3B52C127B340079FF1E /* ImageExample.swift */; };
 		C43EB3B82C127DB30079FF1E /* LabelExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EB3B72C127DB30079FF1E /* LabelExample.swift */; };
 		C43EB3BA2C1287D50079FF1E /* TextFieldExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = C43EB3B92C1287D50079FF1E /* TextFieldExample.swift */; };
+		C47AE9942C12958800AEAF47 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AE9932C12958800AEAF47 /* MainMenu.swift */; };
+		C47AE9982C1295B000AEAF47 /* IMCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AE9972C1295B000AEAF47 /* IMCView.swift */; };
+		C47AE99A2C12D8D500AEAF47 /* IMCResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47AE9992C12D8D400AEAF47 /* IMCResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +28,9 @@
 		C43EB3B52C127B340079FF1E /* ImageExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExample.swift; sourceTree = "<group>"; };
 		C43EB3B72C127DB30079FF1E /* LabelExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelExample.swift; sourceTree = "<group>"; };
 		C43EB3B92C1287D50079FF1E /* TextFieldExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldExample.swift; sourceTree = "<group>"; };
+		C47AE9932C12958800AEAF47 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		C47AE9972C1295B000AEAF47 /* IMCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCView.swift; sourceTree = "<group>"; };
+		C47AE9992C12D8D400AEAF47 /* IMCResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMCResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,10 @@
 		C40EEFD02C0D1680009656F3 /* CursoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				C47AE9952C12958E00AEAF47 /* Apps */,
 				C43EB3B02C12789C0079FF1E /* Components */,
 				C40EEFD12C0D1680009656F3 /* CursoiOSApp.swift */,
+				C47AE9932C12958800AEAF47 /* MainMenu.swift */,
 				C40EEFD52C0D1681009656F3 /* Assets.xcassets */,
 				C40EEFD72C0D1681009656F3 /* Preview Content */,
 			);
@@ -82,6 +90,23 @@
 				C43EB3B92C1287D50079FF1E /* TextFieldExample.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		C47AE9952C12958E00AEAF47 /* Apps */ = {
+			isa = PBXGroup;
+			children = (
+				C47AE9962C12959800AEAF47 /* IMCApp */,
+			);
+			path = Apps;
+			sourceTree = "<group>";
+		};
+		C47AE9962C12959800AEAF47 /* IMCApp */ = {
+			isa = PBXGroup;
+			children = (
+				C47AE9972C1295B000AEAF47 /* IMCView.swift */,
+				C47AE9992C12D8D400AEAF47 /* IMCResult.swift */,
+			);
+			path = IMCApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,7 +180,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C43EB3B42C1278C80079FF1E /* TextExample.swift in Sources */,
+				C47AE9942C12958800AEAF47 /* MainMenu.swift in Sources */,
+				C47AE99A2C12D8D500AEAF47 /* IMCResult.swift in Sources */,
 				C43EB3B82C127DB30079FF1E /* LabelExample.swift in Sources */,
+				C47AE9982C1295B000AEAF47 /* IMCView.swift in Sources */,
 				C43EB3B62C127B340079FF1E /* ImageExample.swift in Sources */,
 				C40EEFD22C0D1680009656F3 /* CursoiOSApp.swift in Sources */,
 				C43EB3BA2C1287D50079FF1E /* TextFieldExample.swift in Sources */,
