@@ -4,7 +4,7 @@ import SwiftUI
 struct CursoiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            TextFieldExample()
+            MainMenu()
         }
     }
 }
