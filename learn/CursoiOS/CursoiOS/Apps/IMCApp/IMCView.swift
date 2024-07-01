@@ -23,11 +23,12 @@ struct IMCView: View {
             HStack{
                 CounterWeight(title: "Edad", subTitle: $age)
                 CounterWeight(title: "Peso", subTitle: $weight)
-                
             }
             
             ///
-            ButtonCalculate()
+            ButtonCalculate(
+                userWeight: Double(weight), userHeight: height
+            )
             
         }.frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
@@ -163,10 +164,18 @@ struct CounterWeight:View {
 
 
 struct ButtonCalculate:View {
+    
+    let userWeight: Double
+    let userHeight: Double
+    
     var body: some View {
         
         NavigationStack{
-            NavigationLink(destination: {}){
+            NavigationLink(destination: {
+                IMCResult(
+                    userWeight: userWeight, userHeight: userHeight
+                )
+            }){
                 Text("Calcular")
                     .font(.title)
                     .bold()

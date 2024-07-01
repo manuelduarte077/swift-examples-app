@@ -1,10 +1,3 @@
-//
-//  ImageExample.swift
-//  CursoiOS
-//
-//  Created by Manuel Duarte on 6/6/24.
-//
-
 import SwiftUI
 
 struct ImageExample: View {
