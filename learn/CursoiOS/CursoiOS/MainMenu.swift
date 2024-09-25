@@ -1,19 +1,22 @@
-//
-//  MainMenu.swift
-//  CursoiOS
-//
-//  Created by Manuel Duarte on 6/6/24.
-//
-
 import SwiftUI
 
 struct MainMenu: View {
     var body: some View {
         NavigationStack{
-            VStack {
+            List {
                 NavigationLink(destination: IMCView(), label: {
                     Text("IMC APP")
                 })
+                
+                NavigationLink(destination: SuperHeroSearchBar(), label: {
+                    Text("Superhero finder")
+                })
+
+
+                NavigationLink(destination: ListExample(), label: {
+                    Text("List")
+                })
+
             }
         }
     }
