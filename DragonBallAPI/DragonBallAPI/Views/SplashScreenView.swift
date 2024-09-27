@@ -12,21 +12,18 @@ struct SplashScreenView: View {
 
     var body: some View {
         if isActive {
-            ContentView() // Reemplaza esto con tu vista principal
+            ContentView()
         } else {
             VStack {
-                // Aquí puedes agregar tu logo o imagen de bienvenida
-                Image("splash_logo") // Asegúrate de que la imagen esté en tus assets
+                Image("splash_logo")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 200, height: 200) // Ajusta el tamaño según tus necesidades
+                    .frame(width: 200, height: 200)
                 
                 Text("Dragon Ball")
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
-                
-                // Animación o cualquier otro contenido que desees#imageLiteral(resourceName: "splash.png")
             }
             .onAppear {
                 // Esperar 2 segundos antes de cambiar a la vista principal

@@ -12,7 +12,6 @@ struct CharacterDetailView: View {
     @StateObject private var favoriteViewModel = FavoriteViewModel()
     @State private var isFavorite: Bool = false
     
-    
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
