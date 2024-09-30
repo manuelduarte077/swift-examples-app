@@ -39,6 +39,10 @@
 		C492FB202CAA58F000A1F7E7 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB1F2CAA58F000A1F7E7 /* ProfileSummary.swift */; };
 		C492FB222CAA5A3D00A1F7E7 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB212CAA5A3D00A1F7E7 /* HikeBadge.swift */; };
 		C492FB242CAA602F00A1F7E7 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB232CAA602F00A1F7E7 /* ProfileEditor.swift */; };
+		C492FB2A2CAA6B9600A1F7E7 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB282CAA6B9600A1F7E7 /* FeatureCard.swift */; };
+		C492FB2B2CAA6B9600A1F7E7 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB252CAA6B9600A1F7E7 /* PageView.swift */; };
+		C492FB2C2CAA6B9600A1F7E7 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB272CAA6B9600A1F7E7 /* PageControl.swift */; };
+		C492FB2D2CAA6B9600A1F7E7 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C492FB262CAA6B9600A1F7E7 /* PageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +79,10 @@
 		C492FB1F2CAA58F000A1F7E7 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		C492FB212CAA5A3D00A1F7E7 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
 		C492FB232CAA602F00A1F7E7 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
+		C492FB252CAA6B9600A1F7E7 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
+		C492FB262CAA6B9600A1F7E7 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		C492FB272CAA6B9600A1F7E7 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		C492FB282CAA6B9600A1F7E7 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,7 @@
 		C492FAE92CAA03F300A1F7E7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C492FB292CAA6B9600A1F7E7 /* PageView */,
 				C492FB0D2CAA3AEF00A1F7E7 /* Hikes */,
 				C492FB032CAA3AE400A1F7E7 /* Badges */,
 				C492FAF72CAA2A1600A1F7E7 /* Helpers */,
@@ -143,6 +152,7 @@
 				C492FAE72CAA01E400A1F7E7 /* ModelData.swift */,
 				C492FAE52CAA008A00A1F7E7 /* Landmark.swift */,
 				C492FAFC2CAA3ABC00A1F7E7 /* Hike.swift */,
+				C492FB1A2CAA4DC000A1F7E7 /* Profile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,12 +225,22 @@
 		C492FB1C2CAA503000A1F7E7 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				C492FB1A2CAA4DC000A1F7E7 /* Profile.swift */,
 				C492FB1D2CAA58A800A1F7E7 /* ProfileHost.swift */,
 				C492FB1F2CAA58F000A1F7E7 /* ProfileSummary.swift */,
 				C492FB232CAA602F00A1F7E7 /* ProfileEditor.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		C492FB292CAA6B9600A1F7E7 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				C492FB252CAA6B9600A1F7E7 /* PageView.swift */,
+				C492FB262CAA6B9600A1F7E7 /* PageViewController.swift */,
+				C492FB272CAA6B9600A1F7E7 /* PageControl.swift */,
+				C492FB282CAA6B9600A1F7E7 /* FeatureCard.swift */,
+			);
+			path = PageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C492FB2A2CAA6B9600A1F7E7 /* FeatureCard.swift in Sources */,
+				C492FB2B2CAA6B9600A1F7E7 /* PageView.swift in Sources */,
+				C492FB2C2CAA6B9600A1F7E7 /* PageControl.swift in Sources */,
+				C492FB2D2CAA6B9600A1F7E7 /* PageViewController.swift in Sources */,
 				C492FB162CAA3C9800A1F7E7 /* CategoryRow.swift in Sources */,
 				C492FB1B2CAA4DC000A1F7E7 /* Profile.swift in Sources */,
 				C492FB042CAA3AE400A1F7E7 /* BadgeBackground.swift in Sources */,
