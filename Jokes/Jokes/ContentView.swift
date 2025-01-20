@@ -2,10 +2,6 @@ import Foundation
 import SwiftUI
 
 
-<<<<<<< Updated upstream
-=======
-// view modifier
->>>>>>> Stashed changes
 struct CardBackground: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -15,10 +11,7 @@ struct CardBackground: ViewModifier {
     }
 }
 
-<<<<<<< Updated upstream
-=======
-// view extension for better modifier access
->>>>>>> Stashed changes
+
 extension View {
     func cardBackground() -> some View {
         modifier(CardBackground())
@@ -26,28 +19,15 @@ extension View {
 }
 
 struct ContentView: View {
-<<<<<<< Updated upstream
 
     @State private var joke: String = ""
-    
+
     var body: some View {
-                
-        Text(joke)
-            .foregroundColor(Color.white)
-            .padding()
-=======
-    
-    @State private var joke: String = ""
-    
-    var body: some View {
-        
         
         Text(joke)
             .foregroundColor(Color.white)
             .padding(20)
->>>>>>> Stashed changes
             .cardBackground()
-           
         
         Button {
             Task {
