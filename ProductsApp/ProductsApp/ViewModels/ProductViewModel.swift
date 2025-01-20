@@ -28,9 +28,4 @@ class ProductViewModel: ObservableObject {
         }
     }
     
-    // Fetch Product by Id
-    func loadProduct(id: Int) -> Product? {
-        return products.first(where: { $0.id == id })
-    }
-    
 }
