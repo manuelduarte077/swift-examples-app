@@ -19,7 +19,6 @@ struct Login: View {
     /// User Log Statu
     @AppStorage("log_Status") private var logStatus: Bool = false
     
-    
     var body: some View {
         ZStack(alignment: .bottom) {
             GeometryReader {

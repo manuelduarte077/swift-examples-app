@@ -68,7 +68,6 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                         .padding(.horizontal)
-                    
                 }
             }
         }
