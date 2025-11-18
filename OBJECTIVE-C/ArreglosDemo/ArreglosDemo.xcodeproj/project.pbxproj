@@ -6,33 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C4DE4B672ECC402600D39B8A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		C47D17FA2D3E13E2001472BC /* LabsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LabsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4DE4B692ECC402600D39B8A /* ArreglosDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ArreglosDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		C47D18112D3E13E4001472BC /* Exceptions for "LabsApp" folder in "LabsApp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = C47D17F92D3E13E2001472BC /* LabsApp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		C47D17FC2D3E13E2001472BC /* LabsApp */ = {
+		C4DE4B6B2ECC402600D39B8A /* ArreglosDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C47D18112D3E13E4001472BC /* Exceptions for "LabsApp" folder in "LabsApp" target */,
-			);
-			path = LabsApp;
+			path = ArreglosDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C47D17F72D3E13E2001472BC /* Frameworks */ = {
+		C4DE4B662ECC402600D39B8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +41,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C47D17F12D3E13E2001472BC = {
+		C4DE4B602ECC402600D39B8A = {
 			isa = PBXGroup;
 			children = (
-				C47D17FC2D3E13E2001472BC /* LabsApp */,
-				C47D17FB2D3E13E2001472BC /* Products */,
+				C4DE4B6B2ECC402600D39B8A /* ArreglosDemo */,
+				C4DE4B6A2ECC402600D39B8A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		C47D17FB2D3E13E2001472BC /* Products */ = {
+		C4DE4B6A2ECC402600D39B8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C47D17FA2D3E13E2001472BC /* LabsApp.app */,
+				C4DE4B692ECC402600D39B8A /* ArreglosDemo */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,73 +60,63 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C47D17F92D3E13E2001472BC /* LabsApp */ = {
+		C4DE4B682ECC402600D39B8A /* ArreglosDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C47D18122D3E13E4001472BC /* Build configuration list for PBXNativeTarget "LabsApp" */;
+			buildConfigurationList = C4DE4B702ECC402600D39B8A /* Build configuration list for PBXNativeTarget "ArreglosDemo" */;
 			buildPhases = (
-				C47D17F62D3E13E2001472BC /* Sources */,
-				C47D17F72D3E13E2001472BC /* Frameworks */,
-				C47D17F82D3E13E2001472BC /* Resources */,
+				C4DE4B652ECC402600D39B8A /* Sources */,
+				C4DE4B662ECC402600D39B8A /* Frameworks */,
+				C4DE4B672ECC402600D39B8A /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C47D17FC2D3E13E2001472BC /* LabsApp */,
+				C4DE4B6B2ECC402600D39B8A /* ArreglosDemo */,
 			);
-			name = LabsApp;
+			name = ArreglosDemo;
 			packageProductDependencies = (
 			);
-			productName = LabsApp;
-			productReference = C47D17FA2D3E13E2001472BC /* LabsApp.app */;
-			productType = "com.apple.product-type.application";
+			productName = ArreglosDemo;
+			productReference = C4DE4B692ECC402600D39B8A /* ArreglosDemo */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		C47D17F22D3E13E2001472BC /* Project object */ = {
+		C4DE4B612ECC402600D39B8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1620;
+				LastUpgradeCheck = 2610;
 				TargetAttributes = {
-					C47D17F92D3E13E2001472BC = {
-						CreatedOnToolsVersion = 16.2;
+					C4DE4B682ECC402600D39B8A = {
+						CreatedOnToolsVersion = 26.1;
 					};
 				};
 			};
-			buildConfigurationList = C47D17F52D3E13E2001472BC /* Build configuration list for PBXProject "LabsApp" */;
+			buildConfigurationList = C4DE4B642ECC402600D39B8A /* Build configuration list for PBXProject "ArreglosDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = C47D17F12D3E13E2001472BC;
+			mainGroup = C4DE4B602ECC402600D39B8A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = C47D17FB2D3E13E2001472BC /* Products */;
+			productRefGroup = C4DE4B6A2ECC402600D39B8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C47D17F92D3E13E2001472BC /* LabsApp */,
+				C4DE4B682ECC402600D39B8A /* ArreglosDemo */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		C47D17F82D3E13E2001472BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		C47D17F62D3E13E2001472BC /* Sources */ = {
+		C4DE4B652ECC402600D39B8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,69 +126,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		C47D18132D3E13E4001472BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XUFV8QBCV;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LabsApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.donmanuel.LabsApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		C47D18142D3E13E4001472BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 2XUFV8QBCV;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LabsApp/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = dev.donmanuel.LabsApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		C47D18152D3E13E4001472BC /* Debug */ = {
+		C4DE4B6E2ECC402600D39B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -234,6 +161,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -251,16 +179,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		C47D18162D3E13E4001472BC /* Release */ = {
+		C4DE4B6F2ECC402600D39B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -295,6 +223,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -306,37 +235,56 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C4DE4B712ECC402600D39B8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4DE4B722ECC402600D39B8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2XUFV8QBCV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C47D17F52D3E13E2001472BC /* Build configuration list for PBXProject "LabsApp" */ = {
+		C4DE4B642ECC402600D39B8A /* Build configuration list for PBXProject "ArreglosDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C47D18152D3E13E4001472BC /* Debug */,
-				C47D18162D3E13E4001472BC /* Release */,
+				C4DE4B6E2ECC402600D39B8A /* Debug */,
+				C4DE4B6F2ECC402600D39B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C47D18122D3E13E4001472BC /* Build configuration list for PBXNativeTarget "LabsApp" */ = {
+		C4DE4B702ECC402600D39B8A /* Build configuration list for PBXNativeTarget "ArreglosDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C47D18132D3E13E4001472BC /* Debug */,
-				C47D18142D3E13E4001472BC /* Release */,
+				C4DE4B712ECC402600D39B8A /* Debug */,
+				C4DE4B722ECC402600D39B8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = C47D17F22D3E13E2001472BC /* Project object */;
+	rootObject = C4DE4B612ECC402600D39B8A /* Project object */;
 }
